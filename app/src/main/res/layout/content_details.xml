@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.example.bernardd.application_viticulteur.Activites.DetailsActivity"
+    tools:showIn="@layout/activity_details">
+
+    <RelativeLayout
+        android:layout_width="318dp"
+        android:layout_height="match_parent"
+        tools:layout_editor_absoluteX="1dp"
+        tools:layout_editor_absoluteY="0dp">
+
+        <TextView
+            android:id="@+id/textViewNom"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="112dp"
+            android:layout_marginStart="112dp"
+            android:layout_marginTop="40dp" />
+
+        <TextView
+            android:id="@+id/textViewPrenom"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/textViewNom"
+            android:layout_alignStart="@+id/textViewNom"
+            android:layout_below="@+id/textViewNom"
+            android:layout_marginTop="49dp" />
+
+        <TextView
+            android:id="@+id/textViewNote"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/textViewPrenom"
+            android:layout_alignStart="@+id/textViewPrenom"
+            android:layout_below="@+id/textViewPrenom"
+            android:layout_marginTop="41dp" />
+
+        <TextView
+            android:id="@+id/LabelNom"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/textViewNom"
+            android:layout_alignBottom="@+id/textViewNom"
+            android:layout_alignLeft="@+id/LabelPrenom"
+            android:layout_alignStart="@+id/LabelPrenom"
+            android:text="@string/Nom" />
+
+        <TextView
+            android:id="@+id/LabelPrenom"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/textViewPrenom"
+            android:layout_alignBottom="@+id/textViewPrenom"
+            android:layout_marginEnd="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_toLeftOf="@+id/textViewPrenom"
+            android:layout_toStartOf="@+id/textViewPrenom"
+            android:text="@string/Prenom" />
+
+
+    </RelativeLayout>
+</android.support.constraint.ConstraintLayout>

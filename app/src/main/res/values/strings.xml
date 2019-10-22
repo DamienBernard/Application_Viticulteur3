@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">Bienvenu dans l application viticulture</string>
+    <string name="action_settings">Settings</string>
+    <string name="Nom">Nom :</string>
+    <string name="Prenom">Prenom :</string>
+    <string name="Note">Note :</string>
+    <string name="Concours">Concours :</string>
+    <string name="title_activity_activite_affichage">Liste des viticulteurs</string>
+    <string name="title_activity_affichage">AffichageActivity</string>
+    <string name="title_activity_details">DetailsActivity</string>
+    <string name="title_activity_affichage_concurent">AffichageConcurentActivity</string>
+
+
+</resources>

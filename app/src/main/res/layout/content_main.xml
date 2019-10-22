@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.example.bernardd.application_viticulteur.Activites.MainActivity"
+    tools:showIn="@layout/activity_main">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="0dp">
+
+        <Button
+            android:id="@+id/button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignEnd="@+id/labelNote"
+            android:layout_alignParentBottom="true"
+            android:layout_alignRight="@+id/labelNote"
+            android:text="Valider"
+            tools:layout_editor_absoluteX="118dp"
+            tools:layout_editor_absoluteY="418dp" />
+
+        <TextView
+            android:id="@+id/messageBienvenu"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="72dp"
+            android:text="@string/app_name"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintHorizontal_bias="0.489"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.135" />
+
+        <TextView
+            android:id="@+id/labelPrenom"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/labelNom"
+            android:layout_alignStart="@+id/labelNom"
+            android:layout_below="@+id/editNom"
+            android:layout_marginTop="25dp"
+            android:text="@string/Prenom"
+            tools:layout_editor_absoluteX="47dp"
+            tools:layout_editor_absoluteY="114dp" />
+
+        <EditText
+            android:id="@+id/editNom"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/editPrenom"
+            android:layout_alignStart="@+id/editPrenom"
+            android:layout_below="@+id/messageBienvenu"
+            android:layout_marginTop="60dp"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:text="Nom"
+            android:textSize = "@dimen/taillemessage"
+            android:textColor = "@color/couleurmessage"
+            tools:layout_editor_absoluteX="47dp"
+            tools:layout_editor_absoluteY="141dp" />
+
+        <TextView
+            android:id="@+id/labelNom"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/messageBienvenu"
+            android:layout_marginTop="32dp"
+            android:layout_toLeftOf="@+id/editNote"
+            android:layout_toStartOf="@+id/editNote"
+            android:text="@string/Nom"
+            tools:layout_editor_absoluteX="47dp"
+            tools:layout_editor_absoluteY="197dp" />
+
+        <EditText
+            android:id="@+id/editPrenom"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/editNom"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="51dp"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:text="Prénom"
+            tools:layout_editor_absoluteX="47dp"
+            tools:layout_editor_absoluteY="222dp" />
+
+        <CheckBox
+            android:id="@+id/checkBox"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/editPrenom"
+            android:layout_alignStart="@+id/editPrenom"
+            android:layout_below="@+id/editPrenom"
+            android:layout_marginTop="32dp"
+            android:text="@string/Concours"
+            tools:layout_editor_absoluteX="47dp"
+            tools:layout_editor_absoluteY="294dp" />
+
+        <TextView
+            android:id="@+id/labelNote"
+            android:visibility="invisible"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/editNote"
+            android:layout_alignBottom="@+id/editNote"
+            android:layout_alignLeft="@+id/labelPrenom"
+            android:layout_alignStart="@+id/labelPrenom"
+            android:text="@string/Note"
+            tools:layout_editor_absoluteX="47dp"
+            tools:layout_editor_absoluteY="365dp" />
+
+        <EditText
+            android:id="@+id/editNote"
+            android:visibility="invisible"
+            android:layout_width="175dp"
+            android:layout_height="41dp"
+            android:layout_alignEnd="@+id/editPrenom"
+            android:layout_alignRight="@+id/editPrenom"
+            android:layout_below="@+id/checkBox"
+            android:layout_marginTop="30dp"
+            android:ems="10"
+            android:inputType="number"
+            android:text="50"
+            tools:layout_editor_absoluteX="102dp"
+            tools:layout_editor_absoluteY="354dp" />
+
+        <Button
+            android:id="@+id/button_Afficher"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignEnd="@+id/messageBienvenu"
+            android:layout_alignRight="@+id/messageBienvenu"
+            android:layout_alignTop="@+id/button"
+            android:text="Afficher" />
+
+        <Button
+            android:id="@+id/buttonConcurrent"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/button_Afficher"
+            android:layout_alignBottom="@+id/button_Afficher"
+            android:layout_toLeftOf="@+id/button_Afficher"
+            android:layout_toStartOf="@+id/button_Afficher"
+            android:text="Concu" />
+
+    </RelativeLayout>
+
+</android.support.constraint.ConstraintLayout>
